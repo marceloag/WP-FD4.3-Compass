@@ -1,32 +1,34 @@
 /*!   
-Theme Name: WP+Foundation+Compass
+Theme Name: WP FD 4.3
 Theme URI: http://www.croop.cl
 Description: Wordpress Foundation and Compass base theme.
 Author: Marcelo Aguila
 Author URI: http://www.marceloaguila.com
-Version: 1
+Version: 1.1
 */
 
 // Global Foundation Settings
 @import "settings";
 
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-
-// Custom Styles for the website
-@import "custom";
-@import "iefoundation";
-
-// Import Normalize
-
-// @import "normalize";
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
-// @import "foundation/foundation-global"; // *always required
 // @import "foundation/components/global"; // *always required
 // @import "foundation/components/grid";
+
+//
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+//
+// @import "foundation/components/grid-5";
+//
+
 // @import "foundation/components/visibility";
 // @import "foundation/components/block-grid";
 // @import "foundation/components/type";
@@ -61,3 +63,4 @@ Version: 1
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+@import "custom";
